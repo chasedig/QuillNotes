@@ -140,25 +140,18 @@
             // 
             // NotesBox
             // 
-            this.NotesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.NotesBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NotesBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NotesBox.FormattingEnabled = true;
             this.NotesBox.ItemHeight = 25;
-            this.NotesBox.Items.AddRange(new object[] {
-            "cool items",
-            "bad code",
-            "tasty waterbottles",
-            "sounds",
-            "nice collection objects",
-            "aaaaaaaaa hahaha yes aaaajajajaaaaaaaaaa yes ok bye"});
             this.NotesBox.Location = new System.Drawing.Point(12, 38);
             this.NotesBox.Name = "NotesBox";
-            this.NotesBox.Size = new System.Drawing.Size(776, 304);
+            this.NotesBox.Size = new System.Drawing.Size(776, 300);
             this.NotesBox.TabIndex = 1;
             // 
             // ViewButton
             // 
-            this.ViewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.ViewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ViewButton.Location = new System.Drawing.Point(12, 348);
             this.ViewButton.MaximumSize = new System.Drawing.Size(75, 23);
             this.ViewButton.Name = "ViewButton";
@@ -169,7 +162,7 @@
             // 
             // EditButton
             // 
-            this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.EditButton.Location = new System.Drawing.Point(93, 348);
             this.EditButton.MaximumSize = new System.Drawing.Size(75, 23);
             this.EditButton.Name = "EditButton";
@@ -180,7 +173,7 @@
             // 
             // NewButton
             // 
-            this.NewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.NewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.NewButton.Location = new System.Drawing.Point(713, 348);
             this.NewButton.MaximumSize = new System.Drawing.Size(75, 23);
             this.NewButton.Name = "NewButton";

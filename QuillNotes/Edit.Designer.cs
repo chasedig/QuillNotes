@@ -36,13 +36,15 @@
             // 
             // SaveNoteButton
             // 
-            this.SaveNoteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.SaveNoteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.SaveNoteButton.Location = new System.Drawing.Point(12, 418);
+            this.SaveNoteButton.MaximumSize = new System.Drawing.Size(75, 23);
             this.SaveNoteButton.Name = "SaveNoteButton";
             this.SaveNoteButton.Size = new System.Drawing.Size(75, 23);
             this.SaveNoteButton.TabIndex = 1;
             this.SaveNoteButton.Text = "Save Note";
             this.SaveNoteButton.UseVisualStyleBackColor = true;
+            this.SaveNoteButton.Click += new System.EventHandler(this.SaveNoteButton_Click);
             // 
             // titleBox
             // 
@@ -60,6 +62,7 @@
             this.editBox.Size = new System.Drawing.Size(388, 372);
             this.editBox.TabIndex = 3;
             this.editBox.Text = "";
+            this.editBox.TextChanged += new System.EventHandler(this.editBox_TextChanged);
             // 
             // noteDisplay
             // 
