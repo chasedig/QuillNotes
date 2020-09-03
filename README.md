@@ -1,2 +1,2 @@
 # QuillNotes
-##Note taking application
+## Note taking application
