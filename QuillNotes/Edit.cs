@@ -9,20 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuillNotes
-
-    
 {
-    public partial class NotesWindow : Form
+    public partial class NoteEditor : Form
     {
-        public NotesWindow()
+        public NoteEditor(string title, string contents)
         {
             InitializeComponent();
-        }
-
-        private void NewButton_Click(object sender, EventArgs e)
-        {
-            NoteEditor editorWindow = new NoteEditor("title test","contents test\ntest lol");
-            editorWindow.Show();
+            titleBox.Text = title;
+            editBox.Text = contents;
         }
     }
 }

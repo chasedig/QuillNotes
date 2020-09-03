@@ -37,14 +37,20 @@
             this.menu_SaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_DividingLine = new System.Windows.Forms.ToolStripSeparator();
             this.menu_Quit = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NotesBox = new System.Windows.Forms.ListBox();
+            this.ViewButton = new System.Windows.Forms.Button();
+            this.EditButton = new System.Windows.Forms.Button();
+            this.NewButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.menuStrip1.BackColor = System.Drawing.Color.Gainsboro;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.FileMenu});
+            this.FileMenu,
+            this.saveToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -126,11 +132,74 @@
             this.menu_Quit.Text = "Quit";
             this.menu_Quit.ToolTipText = "Exit Quill Notes";
             // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // NotesBox
+            // 
+            this.NotesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.NotesBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotesBox.FormattingEnabled = true;
+            this.NotesBox.ItemHeight = 25;
+            this.NotesBox.Items.AddRange(new object[] {
+            "cool items",
+            "bad code",
+            "tasty waterbottles",
+            "sounds",
+            "nice collection objects",
+            "aaaaaaaaa hahaha yes aaaajajajaaaaaaaaaa yes ok bye"});
+            this.NotesBox.Location = new System.Drawing.Point(12, 38);
+            this.NotesBox.Name = "NotesBox";
+            this.NotesBox.Size = new System.Drawing.Size(776, 304);
+            this.NotesBox.TabIndex = 1;
+            // 
+            // ViewButton
+            // 
+            this.ViewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.ViewButton.Location = new System.Drawing.Point(12, 348);
+            this.ViewButton.MaximumSize = new System.Drawing.Size(75, 23);
+            this.ViewButton.Name = "ViewButton";
+            this.ViewButton.Size = new System.Drawing.Size(75, 23);
+            this.ViewButton.TabIndex = 2;
+            this.ViewButton.Text = "View";
+            this.ViewButton.UseVisualStyleBackColor = true;
+            // 
+            // EditButton
+            // 
+            this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.EditButton.Location = new System.Drawing.Point(93, 348);
+            this.EditButton.MaximumSize = new System.Drawing.Size(75, 23);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(75, 23);
+            this.EditButton.TabIndex = 3;
+            this.EditButton.Text = "Edit";
+            this.EditButton.UseVisualStyleBackColor = true;
+            // 
+            // NewButton
+            // 
+            this.NewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.NewButton.Location = new System.Drawing.Point(713, 348);
+            this.NewButton.MaximumSize = new System.Drawing.Size(75, 23);
+            this.NewButton.Name = "NewButton";
+            this.NewButton.Size = new System.Drawing.Size(75, 23);
+            this.NewButton.TabIndex = 4;
+            this.NewButton.Text = "New";
+            this.NewButton.UseVisualStyleBackColor = true;
+            this.NewButton.Click += new System.EventHandler(this.NewButton_Click);
+            // 
             // NotesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.NewButton);
+            this.Controls.Add(this.EditButton);
+            this.Controls.Add(this.ViewButton);
+            this.Controls.Add(this.NotesBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "NotesWindow";
@@ -153,6 +222,11 @@
         private System.Windows.Forms.ToolStripMenuItem menu_NewWindow;
         private System.Windows.Forms.ToolStripSeparator menu_DividingLine;
         private System.Windows.Forms.ToolStripMenuItem menu_Quit;
+        private System.Windows.Forms.ListBox NotesBox;
+        private System.Windows.Forms.Button ViewButton;
+        private System.Windows.Forms.Button EditButton;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.Button NewButton;
     }
 }
 
