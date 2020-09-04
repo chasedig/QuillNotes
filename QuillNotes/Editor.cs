@@ -11,24 +11,15 @@ using Markdig;
 
 namespace QuillNotes
 {
-	public partial class NoteEditor : Form
+	public partial class Editor : Form
 	{
 		public bool creating { get; }
 
-		public int index {
-			get { return _index; }
-			set
-			{
-				_index = value;
-				this.Text = Convert.ToString(_index);
-				Console.WriteLine("Index of " + this.titleBox.Text + " changed to " + Convert.ToString(_index));
-			} 
-		}
+		public int index {get; set;}
 
-		private int _index;
-		public NotesWindow mainForm { get; }
+		public MainWindow mainForm { get; }
 
-		public NoteEditor(string[] note, int index, bool creating, NotesWindow creator)
+		public Editor(string[] note, int index, bool creating, MainWindow creator)
 		{
 			InitializeComponent();
 			this.creating = creating;

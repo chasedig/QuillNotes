@@ -1,6 +1,6 @@
 ﻿namespace QuillNotes
 {
-	partial class NoteEditor
+	partial class Editor
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NoteEditor));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
 			this.SaveNoteButton = new System.Windows.Forms.Button();
 			this.titleBox = new System.Windows.Forms.TextBox();
 			this.editBox = new System.Windows.Forms.RichTextBox();
@@ -75,7 +75,7 @@
 			this.noteDisplay.Size = new System.Drawing.Size(388, 372);
 			this.noteDisplay.TabIndex = 4;
 			// 
-			// NoteEditor
+			// Editor
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -86,11 +86,10 @@
 			this.Controls.Add(this.titleBox);
 			this.Controls.Add(this.SaveNoteButton);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "NoteEditor";
-			this.Text = "Note Editor";
+			this.Name = "Editor";
+			this.Text = "Editor";
 			this.ResumeLayout(false);
 			this.PerformLayout();
-
 		}
 
 		#endregion

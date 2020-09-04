@@ -71,17 +71,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Edit.cs">
+    <Compile Include="Editor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Edit.Designer.cs">
-      <DependentUpon>Edit.cs</DependentUpon>
+    <Compile Include="Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
-    <Compile Include="NotesWindow.cs">
+    <Compile Include="Credits.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NotesWindow.Designer.cs">
-      <DependentUpon>NotesWindow.cs</DependentUpon>
+    <Compile Include="Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileUtilities.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JsonSerialization.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,18 +104,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="utilities.cs" />
+    <Compile Include="Quill.cs" />
+    <Compile Include="Utilities.cs" />
     <Compile Include="View.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View.Designer.cs">
       <DependentUpon>View.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Edit.resx">
-      <DependentUpon>Edit.cs</DependentUpon>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NotesWindow.resx">
-      <DependentUpon>NotesWindow.cs</DependentUpon>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
