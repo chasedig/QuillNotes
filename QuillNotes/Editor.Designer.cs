@@ -1,4 +1,6 @@
-﻿namespace QuillNotes
+﻿using System.Windows.Forms;
+
+namespace QuillNotes
 {
 	partial class Editor
 	{
@@ -32,7 +34,7 @@
 			this.SaveNoteButton = new System.Windows.Forms.Button();
 			this.titleBox = new System.Windows.Forms.TextBox();
 			this.editBox = new System.Windows.Forms.RichTextBox();
-			this.noteDisplay = new System.Windows.Forms.WebBrowser();
+			this.noteDisplay = new WebBrowser();
 			this.SuspendLayout();
 			// 
 			// SaveNoteButton
@@ -68,7 +70,6 @@
 			// noteDisplay
 			// 
 			this.noteDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-			this.noteDisplay.IsWebBrowserContextMenuEnabled = false;
 			this.noteDisplay.Location = new System.Drawing.Point(406, 40);
 			this.noteDisplay.MinimumSize = new System.Drawing.Size(20, 20);
 			this.noteDisplay.Name = "noteDisplay";
@@ -96,6 +97,6 @@
 		private System.Windows.Forms.Button SaveNoteButton;
 		private System.Windows.Forms.TextBox titleBox;
 		private System.Windows.Forms.RichTextBox editBox;
-		private System.Windows.Forms.WebBrowser noteDisplay;
+		private WebBrowser noteDisplay;
 	}
 }

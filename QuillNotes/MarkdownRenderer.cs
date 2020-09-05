@@ -7,22 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CefSharp;
 using Markdig;
 
 namespace QuillNotes
 {
-	public partial class CreditsForm : Form
+	public partial class MarkdownRendererForm : Form
 	{
-		public CreditsForm()
+		public MarkdownRendererForm(string markdownString)
 		{
 			InitializeComponent();
-			string CreditsMarkdown = (
-				"# Credits\n" +
-				"#### Chase Carlson | Developer\n***" +
-				Utilities.GetCopyrightNotice()
-				+"***"
-			);
-			creditsRenderer.DocumentText = Markdown.ToHtml(CreditsMarkdown);
+			Console.WriteLine(markdownString);
+			MarkdownRenderer.DocumentText = Markdown.ToHtml(markdownString);
 		}
 	}
 }

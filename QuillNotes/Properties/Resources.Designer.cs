@@ -61,6 +61,19 @@ namespace QuillNotes.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to # Credits
+        ///
+        ///***© Chase Carlson. All Rights Reserved.***
+        ///
+        ///Chase Carlson | Developer.
+        /// </summary>
+        internal static string credits {
+            get {
+                return ResourceManager.GetString("credits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap downArrow {

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CefSharp;
 using Markdig;
 
 namespace QuillNotes
@@ -16,6 +17,7 @@ namespace QuillNotes
 		public bool creating { get; }
 
 		public int index {get; set;}
+
 
 		public MainWindow mainForm { get; }
 
@@ -35,7 +37,7 @@ namespace QuillNotes
 		{
 			string editBoxText = editBox.Text;
 			var markdownResult = Markdown.ToHtml(editBoxText);
-			noteDisplay.DocumentText = markdownResult;
+			noteDisplay.DocumentText = (markdownResult);
 		}
 
 		private void editBox_TextChanged(object sender, EventArgs e)

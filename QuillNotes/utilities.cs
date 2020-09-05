@@ -4,11 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CefSharp;
+using CefSharp.WinForms;
 
 namespace QuillNotes
 {
 	static class Utilities
 	{
+
+		//public static ChromiumWebBrowser InitializeChromium()
+		//{
+			//CefSettings settings = new CefSettings();
+		//}
 
 		public static void GenerateDebugNotes(MainWindow mainWindow, int amount)
 		{

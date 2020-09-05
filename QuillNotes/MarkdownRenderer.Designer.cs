@@ -1,6 +1,9 @@
-﻿namespace QuillNotes
+﻿using CefSharp.WinForms;
+using System.Windows.Forms;
+
+namespace QuillNotes
 {
-	partial class CreditsForm
+	partial class MarkdownRendererForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,36 +31,35 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreditsForm));
-			this.creditsRenderer = new System.Windows.Forms.WebBrowser();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarkdownRendererForm));
+			this.MarkdownRenderer = new System.Windows.Forms.WebBrowser();
 			this.SuspendLayout();
 			// 
-			// creditsRenderer
+			// MarkdownRenderer
 			// 
-			this.creditsRenderer.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.creditsRenderer.IsWebBrowserContextMenuEnabled = false;
-			this.creditsRenderer.Location = new System.Drawing.Point(0, 0);
-			this.creditsRenderer.MinimumSize = new System.Drawing.Size(20, 20);
-			this.creditsRenderer.Name = "creditsRenderer";
-			this.creditsRenderer.Size = new System.Drawing.Size(345, 450);
-			this.creditsRenderer.TabIndex = 0;
+			this.MarkdownRenderer.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.MarkdownRenderer.Location = new System.Drawing.Point(0, 0);
+			this.MarkdownRenderer.MinimumSize = new System.Drawing.Size(20, 20);
+			this.MarkdownRenderer.Name = "MarkdownRenderer";
+			this.MarkdownRenderer.Size = new System.Drawing.Size(960, 450);
+			this.MarkdownRenderer.TabIndex = 0;
 			// 
-			// CreditsForm
+			// MarkdownRendererForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(345, 450);
-			this.Controls.Add(this.creditsRenderer);
+			this.ClientSize = new System.Drawing.Size(359, 450);
+			this.Controls.Add(this.MarkdownRenderer);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "CreditsForm";
-			this.Text = "Credits";
+			this.Name = "MarkdownRendererForm";
+			this.Text = "MarkdownRenderer";
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.WebBrowser creditsRenderer;
+		private WebBrowser MarkdownRenderer;
 	}
 }

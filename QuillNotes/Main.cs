@@ -406,7 +406,7 @@ namespace QuillNotes
 
 		private void creditsToolbar_Click(object sender, EventArgs e)
 		{
-			CreditsForm creditsForm = new CreditsForm();
+			MarkdownRendererForm creditsForm = new MarkdownRendererForm(Properties.Resources.credits+"\n"+Utilities.GetCopyrightNotice());
 			creditsForm.Show();
 		}
 

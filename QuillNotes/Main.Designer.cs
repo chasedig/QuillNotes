@@ -357,7 +357,7 @@ namespace QuillNotes
 			this.MainMenuStrip = this.toolbar;
 			this.Name = "MainWindow";
 			this.Text = "Quill Notes";
-			this.FormClosing += new FormClosingEventHandler(this.MainWindow_FormClosing);
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);
 			this.toolbar.ResumeLayout(false);
 			this.toolbar.PerformLayout();
 			this.ResumeLayout(false);
